@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"adc_master\startup_stm32f411xe.o"
+"adc_master\main.o"
+"adc_master\stm32f4xx_it.o"
+"adc_master\stm32f4xx_hal_msp.o"
+"adc_master\stm32f4xx_hal_adc.o"
+"adc_master\stm32f4xx_hal_adc_ex.o"
+"adc_master\stm32f4xx_ll_adc.o"
+"adc_master\stm32f4xx_hal_rcc.o"
+"adc_master\stm32f4xx_hal_rcc_ex.o"
+"adc_master\stm32f4xx_hal_flash.o"
+"adc_master\stm32f4xx_hal_flash_ex.o"
+"adc_master\stm32f4xx_hal_flash_ramfunc.o"
+"adc_master\stm32f4xx_hal_gpio.o"
+"adc_master\stm32f4xx_hal_dma_ex.o"
+"adc_master\stm32f4xx_hal_dma.o"
+"adc_master\stm32f4xx_hal_pwr.o"
+"adc_master\stm32f4xx_hal_pwr_ex.o"
+"adc_master\stm32f4xx_hal_cortex.o"
+"adc_master\stm32f4xx_hal.o"
+"adc_master\stm32f4xx_hal_exti.o"
+"adc_master\stm32f4xx_hal_spi.o"
+"adc_master\system_stm32f4xx.o"
+--strict --scatter "ADC_master\ADC_master.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC_master.map" -o ADC_master\ADC_master.axf

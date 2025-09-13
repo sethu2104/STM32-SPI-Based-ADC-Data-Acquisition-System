@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"adc_slave_final\startup_stm32f103xb.o"
+"adc_slave_final\main.o"
+"adc_slave_final\stm32f1xx_it.o"
+"adc_slave_final\stm32f1xx_hal_msp.o"
+"adc_slave_final\stm32f1xx_hal_gpio_ex.o"
+"adc_slave_final\stm32f1xx_hal_spi.o"
+"adc_slave_final\stm32f1xx_hal.o"
+"adc_slave_final\stm32f1xx_hal_rcc.o"
+"adc_slave_final\stm32f1xx_hal_rcc_ex.o"
+"adc_slave_final\stm32f1xx_hal_gpio.o"
+"adc_slave_final\stm32f1xx_hal_dma.o"
+"adc_slave_final\stm32f1xx_hal_cortex.o"
+"adc_slave_final\stm32f1xx_hal_pwr.o"
+"adc_slave_final\stm32f1xx_hal_flash.o"
+"adc_slave_final\stm32f1xx_hal_flash_ex.o"
+"adc_slave_final\stm32f1xx_hal_exti.o"
+"adc_slave_final\stm32f1xx_hal_uart.o"
+"adc_slave_final\system_stm32f1xx.o"
+--strict --scatter "ADC_slave_final\ADC_slave_final.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC_slave_final.map" -o ADC_slave_final\ADC_slave_final.axf
